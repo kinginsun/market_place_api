@@ -4,3 +4,4 @@
 .rspec
 /db/*.sqlite3
 /tmp/*
+/log/*
