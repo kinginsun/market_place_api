@@ -53,3 +53,8 @@ group :test do
 end
 
 gem 'devise'
+gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+gem 'compass-rails', '~> 2.0.4'
+gem 'furatto'
+gem 'font-awesome-rails'
+gem 'simple_form'

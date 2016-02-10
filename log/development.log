@@ -292,3 +292,1377 @@ Processing by Api::V1::UsersController#show as JSON
   Parameters: {"subdomain"=>"api", "id"=>"1"}
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
 Completed 200 OK in 34ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-10 18:16:50 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:17:31 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:18:12 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:18:20 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+
+
+Started GET "/users/" for 127.0.0.1 at 2016-02-10 18:18:22 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (35.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.9ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (168.0ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.html.erb within layouts/sabisu_rails (81.4ms)
+Completed 500 Internal Server Error in 2831ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (uninitialized constant Sprockets::SassCacheStore):
+    10:   <title>Sabisu Explorer</title>
+    11: 
+    12:   <!-- Furatto core CSS -->
+    13:   <%= stylesheet_link_tag "sabisu_rails/application", :cache => true %>
+    14:   <%= csrf_meta_tag %>
+    15: 
+    16:   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  compass-rails (2.0.1) lib/compass-rails/patches/sass_importer.rb:10:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `each'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `detect'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `map'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/layouts/sabisu_rails.html.erb:13:in `___sers_randyz__rvm_gems_ruby_______bundler_gems_sabisu_rails_af____e______app_views_layouts_sabisu_rails_html_erb___2815823034895889550_70344343831140'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/controllers/sabisu_rails/explorer_controller.rb:8:in `index'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.6ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.6ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-10 18:19:23 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:19:34 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:19:39 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+
+
+Started GET "/users/" for 127.0.0.1 at 2016-02-10 18:19:42 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (77.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.html.erb within layouts/sabisu_rails (65.6ms)
+Completed 500 Internal Server Error in 2598ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (uninitialized constant Sprockets::SassCacheStore):
+    10:   <title>Sabisu Explorer</title>
+    11: 
+    12:   <!-- Furatto core CSS -->
+    13:   <%= stylesheet_link_tag "sabisu_rails/application", :cache => true %>
+    14:   <%= csrf_meta_tag %>
+    15: 
+    16:   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  compass-rails (2.0.1) lib/compass-rails/patches/sass_importer.rb:10:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `each'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `detect'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `map'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/layouts/sabisu_rails.html.erb:13:in `___sers_randyz__rvm_gems_ruby_______bundler_gems_sabisu_rails_af____e______app_views_layouts_sabisu_rails_html_erb__789158867715728896_70225572412420'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/controllers/sabisu_rails/explorer_controller.rb:8:in `index'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.7ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:22:52 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SabisuRails::ExplorerController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:22:58 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.html.erb within layouts/sabisu_rails (70.8ms)
+Completed 500 Internal Server Error in 627ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (uninitialized constant Sprockets::SassCacheStore):
+    10:   <title>Sabisu Explorer</title>
+    11: 
+    12:   <!-- Furatto core CSS -->
+    13:   <%= stylesheet_link_tag "sabisu_rails/application", :cache => true %>
+    14:   <%= csrf_meta_tag %>
+    15: 
+    16:   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  compass-rails (2.0.1) lib/compass-rails/patches/sass_importer.rb:10:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `each'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `detect'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `map'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/layouts/sabisu_rails.html.erb:13:in `___sers_randyz__rvm_gems_ruby_______bundler_gems_sabisu_rails_af____e______app_views_layouts_sabisu_rails_html_erb___1538632514969684293_70177343298580'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/controllers/sabisu_rails/explorer_controller.rb:8:in `index'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.8ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.9ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.8ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:24:39 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.html.erb within layouts/sabisu_rails (18.0ms)
+Completed 500 Internal Server Error in 430ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Sprockets::SassCacheStore):
+    10:   <title>Sabisu Explorer</title>
+    11: 
+    12:   <!-- Furatto core CSS -->
+    13:   <%= stylesheet_link_tag "sabisu_rails/application", :cache => true %>
+    14:   <%= csrf_meta_tag %>
+    15: 
+    16:   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  compass-rails (2.0.1) lib/compass-rails/patches/sass_importer.rb:10:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `each'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `detect'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `map'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/layouts/sabisu_rails.html.erb:13:in `___sers_randyz__rvm_gems_ruby_______bundler_gems_sabisu_rails_af____e______app_views_layouts_sabisu_rails_html_erb___1538632514969684293_70177343298580'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/controllers/sabisu_rails/explorer_controller.rb:8:in `index'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.5ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.7ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (75.2ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:24:50 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.html.erb within layouts/sabisu_rails (19.5ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Sprockets::SassCacheStore):
+    10:   <title>Sabisu Explorer</title>
+    11: 
+    12:   <!-- Furatto core CSS -->
+    13:   <%= stylesheet_link_tag "sabisu_rails/application", :cache => true %>
+    14:   <%= csrf_meta_tag %>
+    15: 
+    16:   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  compass-rails (2.0.1) lib/compass-rails/patches/sass_importer.rb:10:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `each'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `detect'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `map'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/layouts/sabisu_rails.html.erb:13:in `___sers_randyz__rvm_gems_ruby_______bundler_gems_sabisu_rails_af____e______app_views_layouts_sabisu_rails_html_erb___1538632514969684293_70177343298580'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/controllers/sabisu_rails/explorer_controller.rb:8:in `index'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.6ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (76.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-02-10 18:26:21 +0800
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"subdomain"=>"api", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 46ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:37:12 +0800
+Processing by SabisuRails::ExplorerController#index as HTML
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.html.erb within layouts/sabisu_rails (19.3ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Sprockets::SassCacheStore):
+    10:   <title>Sabisu Explorer</title>
+    11: 
+    12:   <!-- Furatto core CSS -->
+    13:   <%= stylesheet_link_tag "sabisu_rails/application", :cache => true %>
+    14:   <%= csrf_meta_tag %>
+    15: 
+    16:   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  compass-rails (2.0.1) lib/compass-rails/patches/sass_importer.rb:10:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `yield'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `each'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `detect'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `map'
+  sprockets-rails (3.0.1) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/layouts/sabisu_rails.html.erb:13:in `___sers_randyz__rvm_gems_ruby_______bundler_gems_sabisu_rails_af____e______app_views_layouts_sabisu_rails_html_erb___1538632514969684293_70177343298580'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/randyz/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/mime_responds.rb:217:in `respond_to'
+  /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/controllers/sabisu_rails/explorer_controller.rb:8:in `index'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.5) lib/rails/railtie.rb:194:in `method_missing'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.7ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (80.4ms)
+
+
+Started GET "/sabisu_rails/explorer" for 127.0.0.1 at 2016-02-10 18:37:37 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SabisuRails::ExplorerController#index as HTML
+
+
+Started GET "/users/" for 127.0.0.1 at 2016-02-10 18:37:37 +0800
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:155:in `handle'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:109:in `rescue in block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:106:in `block (2 levels) in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `each'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:96:in `block in start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `loop'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:76:in `start'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/lib/nack/server.rb:12:in `run'
+  /Users/randyz/Library/Application Support/Pow/Versions/0.5.0/node_modules/nack/bin/nack_worker:4:in `<main>'
+
+
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4@global/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.5ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (80.9ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.html.erb within layouts/sabisu_rails (71.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/vendor/assets/stylesheets/sabisu_rails/KelpJSONView.css.scss to /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/vendor/assets/stylesheets/sabisu_rails/KelpJSONView.scss. (called from deprecate_extra_css_extension at /Users/randyz/.rvm/gems/ruby-2.2.4/gems/sass-rails-5.0.4/lib/sass/rails/importer.rb:130)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/assets/stylesheets/sabisu_rails/explorer.css.scss to /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/assets/stylesheets/sabisu_rails/explorer.scss. (called from deprecate_extra_css_extension at /Users/randyz/.rvm/gems/ruby-2.2.4/gems/sass-rails-5.0.4/lib/sass/rails/importer.rb:130)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/vendor/assets/stylesheets/sabisu_rails/KelpJSONView.css.scss to /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/vendor/assets/stylesheets/sabisu_rails/KelpJSONView.scss. (called from deprecate_extra_css_extension at /Users/randyz/.rvm/gems/ruby-2.2.4/gems/sass-rails-5.0.4/lib/sass/rails/importer.rb:130)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/assets/stylesheets/sabisu_rails/explorer.css.scss to /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/assets/stylesheets/sabisu_rails/explorer.scss. (called from deprecate_extra_css_extension at /Users/randyz/.rvm/gems/ruby-2.2.4/gems/sass-rails-5.0.4/lib/sass/rails/importer.rb:130)
+Completed 200 OK in 7973ms (Views: 7742.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sabisu_rails/application-94d461f2af156b2b42d5a1ff7c3b06d6.css?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/jquery-fbd3c47db8f7f0030f377a105ed8fc51.js?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/furatto-f7882ab1929ca09a69389724eb7bafb4.js?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/sabisu_rails/KelpJSONView-6733c20fd8b84835e578f2f1a681ef57.js?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/jquery_ujs-d2cf0f95fbe6472403171bca3c6ea320.js?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/sabisu_rails/sabisu-af1d43731bd59440016c1be520bc90e7.js?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/sabisu_rails/pace-3ed961bfc9499f0a261012ef57cc8511.js?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/sabisu_rails/application-04ca9746a7b6149d02d1a74dc7788b2b.js?body=1" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/assets/fontawesome-webfont-b872926be5285920d081a4a8b8872f26.woff2?v=4.5.0" for 127.0.0.1 at 2016-02-10 18:37:45 +0800
+
+
+Started GET "/sabisu_rails/explorer?utf8=%E2%9C%93&explorer%5Bresource%5D=users&explorer%5Buri_pattern%5D=1&explorer%5Bhttp_method%5D=GET&user%5Bemail%5D=&user%5Bencrypted_password%5D=&user%5Breset_password_token%5D=&user%5Breset_password_sent_at%5D=[FILTERED]&user%5Breset_password_sent_at%5D=[FILTERED]&user%5Breset_password_sent_at%5D=[FILTERED]&user%5Breset_password_sent_at%5D=[FILTERED]&user%5Breset_password_sent_at%5D=[FILTERED]&user%5Bremember_created_at%5D=2016&user%5Bremember_created_at%5D=2&user%5Bremember_created_at%5D=10&user%5Bremember_created_at%5D=10&user%5Bremember_created_at%5D=37&user%5Bsign_in_count%5D=0&user%5Bcurrent_sign_in_at%5D=2016&user%5Bcurrent_sign_in_at%5D=2&user%5Bcurrent_sign_in_at%5D=10&user%5Bcurrent_sign_in_at%5D=10&user%5Bcurrent_sign_in_at%5D=37&user%5Blast_sign_in_at%5D=2016&user%5Blast_sign_in_at%5D=2&user%5Blast_sign_in_at%5D=10&user%5Blast_sign_in_at%5D=10&user%5Blast_sign_in_at%5D=37&user%5Bcurrent_sign_in_ip%5D=&user%5Blast_sign_in_ip%5D=&explorer%5Burl_params%5D%5B1%5D%5Burl_params_name_1%5D=&explorer%5Burl_params%5D%5B1%5D%5Burl_params_value_1%5D=&explorer%5Burl_params%5D%5B1%5D%5Burl_params_name_1%5D=&explorer%5Burl_params%5D%5B1%5D%5Burl_params_value_1%5D=&commit=Send" for 127.0.0.1 at 2016-02-10 18:38:04 +0800
+Processing by SabisuRails::ExplorerController#index as JS
+  Parameters: {"utf8"=>"✓", "explorer"=>{"resource"=>"users", "uri_pattern"=>"1", "http_method"=>"GET", "url_params"=>{"1"=>{"url_params_name_1"=>"", "url_params_value_1"=>""}}}, "user"=>{"email"=>"", "encrypted_password"=>"[FILTERED]", "reset_password_token"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"37", "sign_in_count"=>"0", "current_sign_in_at"=>"37", "last_sign_in_at"=>"37", "current_sign_in_ip"=>"", "last_sign_in_ip"=>""}, "commit"=>"Send"}
+
+
+Started GET "/users/1?=" for 127.0.0.1 at 2016-02-10 18:38:04 +0800
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"subdomain"=>"api", "id"=>"1", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 10ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+  Rendered /Users/randyz/.rvm/gems/ruby-2.2.4/bundler/gems/sabisu-rails-af7499e87912/app/views/sabisu_rails/explorer/index.js.erb (1.8ms)
+Completed 200 OK in 50ms (Views: 29.0ms | ActiveRecord: 0.0ms)
