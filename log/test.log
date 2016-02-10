@@ -290,3 +290,220 @@ Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
   [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
 Completed 422 Unprocessable Entity in 6ms (Views: 3.5ms | ActiveRecord: 0.1ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'curt.cronin@vandervorthowell.us' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "curt.cronin@vandervorthowell.us"], ["encrypted_password", "$2a$04$Ui8.03Pqcez8Dp0bmYBWKul5lvlExlbjk4z3IJsBw02CXuYKtqIKS"], ["created_at", "2016-02-10 09:53:52.869651"], ["updated_at", "2016-02-10 09:53:52.869651"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 20ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stone@emardwilderman.info' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "stone@emardwilderman.info"], ["encrypted_password", "$2a$04$Dl4gqKM2kI9QLyqLP10YyOx3KkYKdHhMXBkp6YsDRvOtHDu3WUjxm"], ["created_at", "2016-02-10 09:53:52.900718"], ["updated_at", "2016-02-10 09:53:52.900718"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"anissa.pfeffer@sanford.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'anissa.pfeffer@sanford.ca' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "anissa.pfeffer@sanford.ca"], ["encrypted_password", "$2a$04$/2rGdZ2dyZcdC9WUhFezgOLC6YoNzOsiylHAAxCNOSOz2.n.y/pcu"], ["created_at", "2016-02-10 09:53:52.915093"], ["updated_at", "2016-02-10 09:53:52.915093"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 201 Created in 8ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"willis.renner@roberts.info", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'willis.renner@roberts.info' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "willis.renner@roberts.info"], ["encrypted_password", "$2a$04$zyc5eE9U1LY9H6QNDOUwtewWTI3AP0AqwsssH.eCNH03.Rzd.c.1."], ["created_at", "2016-02-10 09:53:52.925118"], ["updated_at", "2016-02-10 09:53:52.925118"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 201 Created in 6ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 12ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ricardo_hyatt@price.co.uk' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "ricardo_hyatt@price.co.uk"], ["encrypted_password", "$2a$04$STjbcrUkasC3154mPXEjxu6/6xaXQnMYzpHDWIbTwhgEELJPn.31i"], ["created_at", "2016-02-10 09:53:52.963111"], ["updated_at", "2016-02-10 09:53:52.963111"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'juana.orn@hoeger.name' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "juana.orn@hoeger.name"], ["encrypted_password", "$2a$04$ihI0Ydvd8C7Lh714kDRgAubLoJ59UhHVcJoh5UFZSk29DEe.5A.MO"], ["created_at", "2016-02-10 09:53:52.970027"], ["updated_at", "2016-02-10 09:53:52.970027"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'vicenta_kessler@runolfsdottir.biz' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "vicenta_kessler@runolfsdottir.biz"], ["encrypted_password", "$2a$04$gW.kVSWROxRojm5YUnvPY.xbIbTgt2xf/Ve6uq9fwZ63EQg9C2E0m"], ["created_at", "2016-02-10 09:53:52.976584"], ["updated_at", "2016-02-10 09:53:52.976584"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'bryon@conn.us' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "bryon@conn.us"], ["encrypted_password", "$2a$04$hGyIlTTvC1mYyIqpgeIjp.hnnuJYwh86IJ9ecUU3ZAUEZF4mtRtCO"], ["created_at", "2016-02-10 09:53:52.981780"], ["updated_at", "2016-02-10 09:53:52.981780"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'bertha_vonrueden@shanahan.ca' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "bertha_vonrueden@shanahan.ca"], ["encrypted_password", "$2a$04$HuzBmPN9geNgfYk0o.fV7uxC6naZ6A01aHYt4jxXXuo7y2/JDoISK"], ["created_at", "2016-02-10 09:53:52.986877"], ["updated_at", "2016-02-10 09:53:52.986877"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'esmeralda_harber@bergstrom.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "esmeralda_harber@bergstrom.com"], ["encrypted_password", "$2a$04$pmKOqtFGUk4lNPSbGV7FnO.PK0avlDUQAiSn/TpfOS1ctcUMo7u4y"], ["created_at", "2016-02-10 09:56:57.253253"], ["updated_at", "2016-02-10 09:56:57.253253"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 20ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'neil.kihn@kesslerbartoletti.us' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "neil.kihn@kesslerbartoletti.us"], ["encrypted_password", "$2a$04$IfbRQPnQq10W06zKWSm2rO9nGeMI7H71U0kyC8cVmSz2cWaEGr1ia"], ["created_at", "2016-02-10 09:56:57.283515"], ["updated_at", "2016-02-10 09:56:57.283515"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 14ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"franz@jewess.ca", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'franz@jewess.ca' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "franz@jewess.ca"], ["encrypted_password", "$2a$04$I0hu.WJgRhnoYgEX6Tdc5OK9yFvbX0IkwknVZX5RnfvTiyQnKgove"], ["created_at", "2016-02-10 09:56:57.330026"], ["updated_at", "2016-02-10 09:56:57.330026"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 201 Created in 7ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by Api::V1::UsersController#create as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"cale@kingbrekke.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'cale@kingbrekke.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "cale@kingbrekke.com"], ["encrypted_password", "$2a$04$sDnylvOwiVdK3N2zMCkiP.76IZhU3/WQ7sCn5o9moMN2IqPdU3JD2"], ["created_at", "2016-02-10 09:56:57.343217"], ["updated_at", "2016-02-10 09:56:57.343217"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 201 Created in 10ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rosalyn@klocko.info' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "rosalyn@klocko.info"], ["encrypted_password", "$2a$04$dMZhSYRrK/yGUpbivo71b.fQw.8rl8hKFNGFFdFQ.YJ/9z8w7zTxu"], ["created_at", "2016-02-10 09:56:57.352694"], ["updated_at", "2016-02-10 09:56:57.352694"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#update as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'michel@schneiderkuhic.name' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "michel@schneiderkuhic.name"], ["encrypted_password", "$2a$04$ksMnSxhaWT0ilAGSsbB1cOi/5glAE7bg2MrgDLoVyyIZdRPRfTlr2"], ["created_at", "2016-02-10 09:56:57.366720"], ["updated_at", "2016-02-10 09:56:57.366720"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#update as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 6ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'charles.adams@towneschaefer.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "charles.adams@towneschaefer.com"], ["encrypted_password", "$2a$04$G3a2fbI2U1fB3Dafnt5NC..BYd9IDlwf9UwMPoqZ3ePU4fJAfrW6."], ["created_at", "2016-02-10 09:56:57.378953"], ["updated_at", "2016-02-10 09:56:57.378953"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#update as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"bademail.com"}, "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'bademail.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 422 Unprocessable Entity in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'flossie@dare.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "flossie@dare.com"], ["encrypted_password", "$2a$04$hYRSmSDp9eXABT8CzibJ8uuSAKWalr3VcIvrnMeaThVP8JrqbndKS"], ["created_at", "2016-02-10 09:56:57.389298"], ["updated_at", "2016-02-10 09:56:57.389298"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by Api::V1::UsersController#update as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."email" = 'newmail@example.com' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["email", "newmail@example.com"], ["updated_at", "2016-02-10 09:56:57.393030"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jonathan@wintheiseroconner.info' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "jonathan@wintheiseroconner.info"], ["encrypted_password", "$2a$04$uFRyNcgi7ZkytpSRh.4rsOKREYCdu5dOTtd6z5lCnb26V5m1AXaVe"], ["created_at", "2016-02-10 09:56:57.403281"], ["updated_at", "2016-02-10 09:56:57.403281"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by Api::V1::UsersController#update as application/vnd.marketplace.v1
+  Parameters: {"user"=>{"email"=>"newmail@example.com"}, "id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."email" = 'newmail@example.com' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "newmail@example.com"], ["updated_at", "2016-02-10 09:56:57.405961"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
